@@ -51,7 +51,6 @@ export default function SavingsPage() {
     labels: months.map(m => m.label.split(' ')[0]),
     datasets: [{
       data: months.map(m => m.savings),
-      borderColor: m => m.raw >= 0 ? '#22c98a' : '#f05252',
       borderColor: '#4f8ef7',
       backgroundColor: 'rgba(79,142,247,0.07)',
       borderWidth: 2, tension: 0.4, fill: true,

@@ -45,8 +45,7 @@ export function ProgressBar({ value, max = 100, variant }) {
   const color = variant || (pct >= 90 ? 'danger' : pct >= 70 ? 'warning' : 'safe');
   return (
     <div className="progress-bar-wrapper">
-      <div className="progress-bar-fill" style={{ width: `${pct}%` }} data-variant={color}
-        className={`progress-bar-fill ${color}`} />
+      <div className={`progress-bar-fill ${color}`} style={{ width: `${pct}%` }} />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useFetch } from '../../hooks/useFinance';
-import { dashboardService, formatCurrency, CATEGORY_COLORS } from '../../services/api';
+import { dashboardService, CATEGORY_COLORS } from '../../services/api';
 import { Loading, EmptyState, ProgressBar } from '../../components/common';
 import {
   Chart as ChartJS, CategoryScale, LinearScale, BarElement, LineElement,
