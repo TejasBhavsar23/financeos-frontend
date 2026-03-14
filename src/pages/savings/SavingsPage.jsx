@@ -31,7 +31,7 @@ export default function SavingsPage() {
   for (let i = 11; i >= 0; i--) {
     const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
     const mName = d.toLocaleString('en', { month: 'short' });
-    const m = d.getMonth() + 1;
+    const _month = d.getMonth() + 1;
     const y = d.getFullYear();
     const inc = (incSummary || []).find(s => s.month === mName && s.year === y);
     const exp = (expSummary || []).find(s => s.month === mName && s.year === y);

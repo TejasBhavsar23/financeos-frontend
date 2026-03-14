@@ -29,7 +29,7 @@ export default function Dashboard() {
   if (!data) return null;
 
   const { totalIncomeThisMonth, totalExpensesThisMonth, totalSavingsThisMonth,
-    remainingBalance, expenseByCategory, monthlySummary, upcomingBills, activeGoals } = data;
+    expenseByCategory, monthlySummary, upcomingBills, activeGoals } = data;
 
   const savingsRate = totalIncomeThisMonth > 0
     ? Math.round((totalSavingsThisMonth / totalIncomeThisMonth) * 100) : 0;

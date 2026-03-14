@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useFetch, useModal, useCurrentPeriod } from '../../hooks/useFinance';
-import { incomeService, INCOME_SOURCES, SOURCE_ICONS, formatCurrency } from '../../services/api';
+import { incomeService, INCOME_SOURCES, SOURCE_ICONS } from '../../services/api';
 import { Loading, EmptyState, Modal, CategoryBadge, ConfirmDialog, MonthPicker } from '../../components/common';
 import toast from 'react-hot-toast';
 
